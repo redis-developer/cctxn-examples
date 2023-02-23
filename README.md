@@ -212,7 +212,7 @@ pprint(result.rows)
 ```
 ## Search Scenario 6 <a name="scenario6"></a>
 ### Business Problem
-Aggregate total spend for categories that had individual tranactions with value >$500 in Dec 2022
+Aggregate total spend for categories that had individual tranactions with value >$500 in Dec 2021
 ### CLI
 ```bash
 FT.AGGREGATE txnIdx '(@txn_date:2021\-12* @txn_currency:{USD} @txn_amt:[(500, inf])' GROUPBY 1 @expense_category REDUCE SUM 1 @txn_amt as total_spend SORTBY 2 @total_spend DESC

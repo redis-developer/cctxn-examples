@@ -120,7 +120,7 @@ def search(client):
     result = client.ft(IDX_NAME).aggregate(request)
     pprint(result.rows)
 
-    print('\n*** Search Scenario 6:  Aggregate total spend for categories that had individual tranactions with value >$500 in Dec 2022  ***')
+    print('\n*** Search Scenario 6:  Aggregate total spend for categories that had individual tranactions with value >$500 in Dec 2021  ***')
     request = AggregateRequest('(@txn_date:2021\-12* @txn_currency:{USD} @txn_amt:[(500, inf])')\
         .group_by('@expense_category', reducers.sum('@txn_amt').alias('total_spend'))\
         .sort_by(Desc('@total_spend'))
