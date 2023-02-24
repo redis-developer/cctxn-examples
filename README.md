@@ -13,7 +13,7 @@
 10.  [Search Scenario 3](#scenario3)
 11.  [Search Scenario 4](#scenario4)
 12.  [Search Scenario 5](#scenario5)
-13.  [Search Scenario 2](#scenario6)
+13.  [Search Scenario 6](#scenario6)
  
 ## Summary <a name="summary"></a>
 This is collection of CLI and Python examples that first load Redis with credit card transaction records and then demonstrate various search and aggregation scenarios on that data.
